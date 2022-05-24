@@ -15,7 +15,7 @@ from aiogram.types import ParseMode, InputMediaPhoto, InputMediaVideo, ChatActio
 logging.basicConfig(format=f'%(filename)s [ LINE:%(lineno)+3s ]#%(levelname)+8s [%(asctime)s] %(message)s', level=logging.INFO)
 
 
-TOKEN = '5249944816:AAEGA7WFQeV6Eq6rR79fIv6FsxHgjIfKNwc'
+TOKEN = os.getenv('BOT_TOKEN')
 bot = Bot(token=TOKEN) 
 dp = Dispatcher(bot)
 
